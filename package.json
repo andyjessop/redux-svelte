@@ -1,0 +1,31 @@
+{
+  "name": "svelte-redux",
+  "version": "0.1.0",
+  "description": "A declarative observer of Redux stores for Svelte components",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andyjessop/svelte-redux.git"
+  },
+  "keywords": [
+    "Svelte",
+    "Redux"
+  ],
+  "author": "Andy Jessop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andyjessop/svelte-redux/issues"
+  },
+  "homepage": "https://github.com/andyjessop/svelte-redux#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.4.3",
+    "redux": "^3.7.2",
+    "regenerator-runtime": "^0.11.1"
+  }
+}

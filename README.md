@@ -4,18 +4,22 @@ This is a very small package (just 200B gzipped) to join Redux and Svelte, simpl
 ### Installation
 
 ```
-npm install redux-svelte
+npm install --save redux-svelte
 ```
 
 ### Usage
 
 In your Svelte component:
-```js
+```html
+<div>{{ a }}{{ b }}{{ c }}</div>
+
 <script>
 import observeState from 'redux-svelte';
 
 export default {
-  immutable: true, // This MUST be set to make Svelte efficiently understand what to update
+  // This MUST be set (either here on in the root component)
+  // to make Svelte efficiently understand what to update
+  immutable: true,
   oncreate() {
     this.observeState(store, state => ({
       a: state.a,
@@ -30,4 +34,4 @@ export default {
 }
 </script>
 ```
-When the state changes in Redux, the Svelte `data` state is updated. This works by comparing the object reference and updating only what has changed. This is a tiny package, but is exceptionally useful and joins these two wonderful packages with elegance and without anti-patterns in either.
+When the state changes in Redux, the Svelte `data` state is updated. This works by comparing the object reference and updating only what has changed.

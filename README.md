@@ -1,10 +1,10 @@
-# svelte-redux
+# redux-svelte
 This is a very small package (just 200B gzipped) to join Redux and Svelte, simply and delcaratively. It subscribes to your Redux store and updates mapped data only when it changes. It's very efficient, and very fast.
 
 ### Installation
 
 ```
-npm install svelte-redux
+npm install redux-svelte
 ```
 
 ### Usage
@@ -12,7 +12,7 @@ npm install svelte-redux
 In your Svelte component:
 ```js
 <script>
-import observeState from 'svelte-redux';
+import observeState from 'redux-svelte';
 
 export default {
   immutable: true, // This MUST be set to make Svelte efficiently understand what to update

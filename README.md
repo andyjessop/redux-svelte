@@ -18,8 +18,9 @@ import observeState from 'redux-svelte';
 
 export default {
   // This MUST be set (either here on in the root component)
-  // to make Svelte efficiently understand what to update
+  // to make Svelte efficiently update only what has changed.
   immutable: true,
+
   oncreate() {
     this.observeState(store, state => ({
       a: state.a,

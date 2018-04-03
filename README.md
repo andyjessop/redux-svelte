@@ -1,5 +1,5 @@
 # redux-svelte
-This is a very small package (just 200B gzipped) to join Redux and Svelte, simply and delcaratively. It subscribes to your Redux store and updates mapped data only when it changes. It's very efficient, and very fast.
+This is a very small package (just 200B gzipped) to join Redux and Svelte, simply and declaratively. It subscribes to your Redux store and updates mapped data only when it changes. It's very efficient, and very fast.
 
 ### Installation
 
